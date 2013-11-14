@@ -1,6 +1,6 @@
 #!/bin/bash
 
-_index=logstash-YYYY.MM.DD
+_index=logstash-`date +%Y.%m.%d`
 _type=memo
 logdate=`date +%Y-%m-%d`
 
