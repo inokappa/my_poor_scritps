@@ -12,5 +12,5 @@ do
   timestamp=`date +%H:%M:%S`
   sleep 1
   curl -XPUT "http://localhost:9200/$_index/$_type/$i" -d \
-  '{"name" : "kappa","date" : '$logdate',"message" : "test" ,"v" : '$i' ,"@log_name" : "test", "@timestamp" : "'$logdate'T'$timestamp'+09:00"}'
+  '{"name" : "kappa","message" : "test" ,"v" : '$i' ,"@log_name" : "test", "@timestamp" : "'$logdate'T'$timestamp'+09:00"}'
 done
